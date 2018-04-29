@@ -19,7 +19,7 @@ subMetering3 <- as.numeric(data$Sub_metering_3)
 
 # plot globalactivepower vs date&time
 png("plot3.png", width=480, height=480)
-plot(datetime, subMetering1, type="l", xlab="", ylab="Energy Submetering")
+plot(datetime, subMetering1, type="l", xlab="", ylab="Energy sub metering")
 lines(datetime, subMetering2, type="l", col="red")
 lines(datetime, subMetering3, type="l", col="blue")
 legend(c("topright"), c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, lwd=2.5, col=c("black", "red", "blue"))
